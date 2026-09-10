@@ -521,14 +521,15 @@
   }
   .eg-title::before { left: calc(50% - 130px); }
   .eg-title::after { right: calc(50% - 130px); }
+  .no-line::before, .no-line::after { display: none; }
 
   .principal-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 10px 0;
-    font-size: 14px;
+    font-size: 13px;
     font-family: 'Montserrat', sans-serif;
-    color: rgba(250,246,240,0.9);
+    color: #ffffff;
     line-height: 1.4;
     text-align: center;
     max-width: 560px;
@@ -584,8 +585,8 @@
     max-width: 560px;
     margin: 0 auto;
     font-family: 'Montserrat', sans-serif;
-    font-size: 14px;
-    color: var(--ivory);
+    font-size: 13px;
+    color: #ffffff;
     text-align: center;
     white-space: nowrap;
     text-transform: uppercase;
@@ -598,9 +599,9 @@
     max-width: 560px;
     margin: 0 auto;
     font-family: 'Montserrat', sans-serif;
-    font-size: 14px;
+    font-size: 13px;
     font-weight: 400;
-    color: var(--ivory);
+    color: #ffffff;
     text-align: center;
     white-space: nowrap;
     text-transform: uppercase;
@@ -611,17 +612,17 @@
     justify-content: center;
     gap: 8px 28px;
     font-family: 'Montserrat', sans-serif;
-    font-size: 19px;
-    color: var(--ivory);
+    font-size: 13px;
+    color: #ffffff;
     text-align: center;
   }
   .pair-list { display: flex; flex-direction: column; gap: 6px; align-items: center; }
-  .pair-row { font-family: 'Montserrat', sans-serif; font-size: 14px; color: var(--ivory); white-space: nowrap; text-transform: uppercase; }
-  .officiant-name { font-size: 19px; white-space: normal; text-align: center; text-transform: uppercase; }
+  .pair-row { font-family: 'Montserrat', sans-serif; font-size: 13px; color: #ffffff; white-space: nowrap; text-transform: uppercase; }
+  .officiant-name { font-size: 13px; white-space: nowrap; text-align: center; text-transform: uppercase; color: #ffffff; }
   .officiant-subtitle { font-size: 13px; }
   .parents-grid > div {
-    color: var(--gold-light);
-    font-size: 15px;
+    color: #ffffff;
+    font-size: 13px;
     font-weight: 500;
     letter-spacing: 0.03em;
     text-transform: uppercase;
@@ -648,8 +649,8 @@
     max-width: 560px;
     margin: 0 auto;
     font-family: 'Montserrat', sans-serif;
-    font-size: 18px;
-    color: var(--ivory);
+    font-size: 13px;
+    color: #ffffff;
     text-align: center;
     white-space: nowrap;
   }
@@ -679,8 +680,8 @@
     max-width: 560px;
     margin: 0 auto;
     font-family: 'Montserrat', sans-serif;
-    font-size: 14px;
-    color: var(--ivory);
+    font-size: 13px;
+    color: #ffffff;
     text-align: center;
     text-transform: uppercase;
   }
@@ -936,15 +937,13 @@
     .name-grid,
     .paired-name-grid,
     .five-grid {
-      font-size: 11px;
-      white-space: normal;
-      word-break: break-word;
+      font-size: 13px;
+      white-space: nowrap;
       max-width: 100%;
     }
     .principal-grid {
       font-size: 13px;
-      white-space: normal;
-      word-break: break-word;
+      white-space: nowrap;
       max-width: 100%;
     }
     .name-grid > div:nth-child(odd),
@@ -962,14 +961,14 @@
     .paired-role-labels { max-width: 100%; }
     .paired-role-labels .role-label:first-child { text-align: right; padding-right: 14px; }
     .paired-role-labels .role-label:last-child  { text-align: left;  padding-left: 14px; }
-    .pair-row { font-size: 12px; white-space: normal; word-break: break-word; }
+    .pair-row { font-size: 13px; white-space: nowrap; }
     .officiant-name { font-size: 15px; }
     .officiant-subtitle { font-size: 12px; }
     .five-row > div:nth-child(odd)  { text-align: right; padding-right: 14px; }
     .five-row > div:nth-child(even) { text-align: left;  padding-left: 14px; }
     .bearers-top > div:nth-child(odd)  { text-align: right; padding-right: 14px; }
     .bearers-top > div:nth-child(even) { text-align: left;  padding-left: 14px; }
-    .bearers-bottom { font-size: 11px; white-space: normal; }
+    .bearers-bottom { font-size: 13px; white-space: nowrap; }
     .eg-title { font-size: 9px; letter-spacing: 0.18em; }
     .eg-title::before { left: calc(50% - 60px); width: 28px; }
     .eg-title::after  { right: calc(50% - 60px); width: 28px; }
@@ -997,7 +996,7 @@
     .hero-card { padding: 24px 16px 32px; }
     .name-grid,
     .paired-name-grid { font-size: 14px; }
-    .parents-grid > div { font-size: 12px; font-weight: 500; }
+    .parents-grid > div { font-size: 12px; font-weight: 500; white-space: nowrap; }
     .attire-figure img { height: 160px; }
     .swatch { width: calc(50% - 16px); }
     .swatch-color { width: 60px; height: 60px; }
@@ -1120,7 +1119,7 @@
   <h2 style="color: var(--ivory);">Our principal sponsors and entourage</h2>
 
   <div class="entourage-group">
-    <p class="eg-title">Marriage Officiant</p>
+    <p class="eg-title no-line">Marriage Officiant</p>
     <div class="pair-list" style="text-align: center;">
       <div class="pair-row officiant-name">Most Reverend Rolando Octavio J. Tria Tirona, OCD, DD</div>
       <div class="officiant-subtitle" style="font-family: 'Montserrat', sans-serif; letter-spacing: 0.08em; color: rgba(250,246,240,0.65); margin-top: 6px;">Archbishop-Emeritus of Cáceres</div>
@@ -1141,7 +1140,7 @@
   </div>
 
   <div class="entourage-group">
-    <p class="eg-title" style="margin-bottom: 10px;">Principal sponsors</p>
+    <p class="eg-title no-line" style="margin-bottom: 10px;">Principal sponsors</p>
     <div class="principal-grid" style="text-transform: uppercase;">
       <div>Manuel D. Lo Jr.</div><div>Rosita T. Lo</div>
       <div>Thomas T. Enrile</div><div>Emelina S. Enrile</div>
@@ -1155,7 +1154,7 @@
   </div>
 
   <div class="entourage-group">
-    <p class="eg-title">The wedding party</p>
+    <p class="eg-title no-line">The wedding party</p>
 
     <div class="role-block">
       <div class="paired-role-labels">
