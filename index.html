@@ -719,8 +719,9 @@
     padding: 110px 32px;
     text-align: center;
   }
-  .details .eyebrow { color: var(--gold-light); }
-  .details h2 { color: var(--ivory); font-size: 28px; letter-spacing: 0.04em; }
+  .details .eyebrow { color: var(--gold-light); text-align: center; }
+  .details h2 { color: var(--ivory); font-size: 28px; letter-spacing: 0.04em; text-align: center; }
+  .details .sprig { margin: 0 auto; display: block; }
   .details .sprig path, .details .sprig .leaf { stroke: var(--gold-light); }
   .details .sprig .leaf { fill: var(--sage-light); }
 
@@ -729,11 +730,11 @@
     grid-template-columns: 1fr;
     gap: 1px;
     margin-top: 56px;
-    max-width: 420px;
+    max-width: 480px;
     margin-left: auto;
     margin-right: auto;
     background: transparent;
-
+    text-align: center;
   }
 
   .card {
@@ -1264,7 +1265,7 @@
 
 
 <section class="details" id="details">
-  <div style="max-width: 720px; margin: 0 auto;">
+  <div style="max-width: 720px; margin: 0 auto; text-align: center;">
     <svg class="sprig" viewBox="0 0 100 60" xmlns="http://www.w3.org/2000/svg">
       <path d="M50 30 C 35 25, 20 28, 8 20" />
       <path d="M50 30 C 65 25, 80 28, 92 20" />
@@ -1278,7 +1279,7 @@
     <div class="card">
       <svg class="icon" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" stroke-width="1.3"><path d="M12 2v6M9 5h6M6 22V11l6-4 6 4v11M10 22v-6h4v6"/></svg>
       <h3>Ceremony</h3>
-      <p>1:30 PM<br>San Agustin Church<br>Manila</p>
+      <p>1:30 PM<br>San Agustin Church</p>
     </div>
     <div class="card">
       <svg class="icon" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" stroke-width="1.3"><path d="M5 3l7 7-7 7M19 3l-7 7 7 7M12 17v4M9 21h6"/></svg>
@@ -1288,11 +1289,7 @@
     <div class="card">
       <svg class="icon" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" stroke-width="1.3"><rect x="4" y="9" width="16" height="11" rx="1"/><path d="M4 13h16M12 9v11M8 9c-2 0-3-2-1-3s4 1 4 3M16 9c2 0 3-2 1-3s-4 1-4 3"/></svg>
       <h3>Gifts</h3>
-      <p style="text-transform: uppercase; letter-spacing: 0.06em; line-height: 2; font-size: 11px;">
-        The most important gift to us is having you share our special day.<br>
-        If you were thinking of giving a gift, a monetary contribution<br>
-        toward our new home together would mean the world to us.
-      </p>
+      <p style="text-transform: uppercase; line-height: 2; font-size: clamp(7px, 1.8vw, 11px); text-align: center; max-width: 340px; margin: 0 auto;">The most important gift to us is having you share our special day. If you were thinking of giving a gift, a monetary contribution toward our new home together would mean the world to us.</p>
     </div>
   </div>
 </section>
@@ -1352,7 +1349,7 @@
           <div class="swatch-hex">#3F4A36</div>
         </div>
       </div>
-      <div class="attire-avoid">Please avoid white &amp; ivory<br>reserved for the bride</div>
+      <div class="attire-avoid">Please avoid white &amp; ivory</div>
     </div>
   </div>
 </section>
